@@ -22,12 +22,8 @@ fn main() -> Result<(), Box<dyn Error>> {
                         if c2 == c3 {
                             if (c1 as u32) < 96 {
                                 s += c1 as u32 - 38;
-                                // println!("{} {} {}", v[i], v[i + 1], v[i + 2]);
-                                // println!("{} {} {}", c1, c1 as u32 - 38, s);
                             } else {
                                 s += c1 as u32 - 96;
-                                // println!("{} {} {}", v[i], v[i + 1], v[i + 2]);
-                                // println!("{} {} {}", c1, c1 as u32 - 96, s);
                             }
                             i += 3;
                             break 'outer;
